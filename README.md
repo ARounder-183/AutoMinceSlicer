@@ -28,7 +28,7 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 从这里下载[Releases · openvpi/dataset-tools (github.com)](https://github.com/openvpi/dataset-tools/releases)  
 ![](./Resources/Pasted%20image%2020240420095022.png)  
 ## 1.2 AudioSlicer的使用
-解压后，双击AudioSlicer.exe打开
+解压后，双击AudioSlicer.exe打开  
 ![](./Resources/Pasted%20image%2020240420095152.png)  
 左上：添加音频文件  
 右侧：设置导出目录  
