@@ -100,12 +100,12 @@ def match_lyric(
             #
             lab_romaji = g2p.kana_to_romaji(lab_kana)
             lab_romaji = lab_romaji.split()
-            print(lab_kana)
-            print(g2p.convert_kana(lab_kana, 'Hiragana'))
+            # print(lab_kana)
+            # print(g2p.convert_kana(lab_kana, 'Hiragana'))
             element_to_remove = '゜'
             while element_to_remove in lab_romaji:
                 lab_romaji.remove(element_to_remove)
-            print(lab_romaji)
+            # print(lab_romaji)
             #
             if len(lab_kana) > 0:
                 match_text, match_kana, text_step, kana_step = ld_match.find_similar_substrings(lab_romaji, kana_list,
