@@ -66,11 +66,11 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 >SOFA (Singing-Oriented Forced Aligner)是一个专为歌声设计的强制对齐器，同时也兼容非歌声的对齐。相比于MFA更加准确，更易部署。也更适配拼接声库转制​
 >实测在lab准确的情况下SOFA对齐不比精标差多少 
 
-参考文档：[SOFA使用文档 - 飞书云文档 (feishu.cn)](https://openvpi-docs.feishu.cn/wiki/EWkawdcYjii9rlkEu1GcQyaNnAg)
+参考文档：[SOFA使用文档 - 飞书云文档 (feishu.cn)](https://openvpi-docs.feishu.cn/wiki/EWkawdcYjii9rlkEu1GcQyaNnAg)  
 参考文档进行安装和使用
 ## 3.1 Anaconda的下载和安装
 接下来的流程都在Anaconda中进行，如已安装可跳过  
-点击链接下载[Distribution | Anaconda](https://www.anaconda.com/download/)
+点击链接下载[Distribution | Anaconda](https://www.anaconda.com/download/)  
 如遇到需要登录，可点击下方的Skip registration跳过
 ![](./Resources/Pasted%20image%2020240420103036.png)
 选择Windows
@@ -93,7 +93,7 @@ conda activate SOFA
 访问[PyTorch官网](https://pytorch.org/get-started/locally/)，根据您的操作系统和硬件，按照官方说明复制代码安装PyTorch​  
 ![](./Resources/Pasted%20image%2020240420103914.png)
 ## 3.3 下载SOFA库并准备依赖
-项目地址：[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)
+项目地址：[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)  
 若不会使用git，可以如图所示下载压缩包然后解压。
 ![](./Resources/Pasted%20image%2020240420104136.png)
 在终端中使用cd命令进入你的SOFA仓库地址
@@ -149,11 +149,10 @@ cd path/to/your/LyricFA
 ```
 安装依赖
 ```python
-# 日语请将requirements.txt改为requirements_jp.txt
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements_jp.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+仅汉语需要进行
 ```python
-#仅汉语需要进行
 pip install rapid_paraformer
 ```
 如果是日语流程，请将**修改文件**里的三个py文件粘贴到目录下进行替换
