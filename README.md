@@ -95,7 +95,7 @@ conda activate SOFA
 ## 3.3 下载SOFA库并准备依赖
 项目地址：[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)  
 若不会使用git，可以如图所示下载压缩包然后解压。
-![](./Resources/Pasted%20image%2020240420104136.png)
+![](./Resources/Pasted%20image%2020240420104136.png)  
 在终端中使用cd命令进入你的SOFA仓库地址
 ```python
 cd path/to/your/SOFA
@@ -105,7 +105,8 @@ cd path/to/your/SOFA
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 从[这里](https://github.com/qiuqiao/SOFA/discussions/categories/pretrained-model-sharing)下载模型，将解压后的(.ckpt)文件放在`/ckpt`文件夹下，将dictionary(.txt)文件放在`/dictionary`文件夹下  
-将上面准备好的wav音频和lab标注，放在`/segments`文件夹下，格式如下
+将上面准备好的wav音频和lab标注，放在`/segments`文件夹下，格式如下  
+目前已有的日语模型貌似只支持**罗马音**  
 ```python
 - segments​
 	- singer1​
