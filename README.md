@@ -12,10 +12,10 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 	- minceSlicer.py(脚本源码)
 	- minceSlicer.exe(可执行文件)
 	
-相关项目地址：
-[wolfgitpr/LyricFA (github.com)](https://github.com/wolfgitpr/LyricFA)
-[openvpi/dataset-tools: DiffSinger dataset processing tools, including audio processing, labeling. (github.com)](https://github.com/openvpi/dataset-tools)
-[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)
+相关项目地址：  
+[wolfgitpr/LyricFA (github.com)](https://github.com/wolfgitpr/LyricFA)  
+[openvpi/dataset-tools: DiffSinger dataset processing tools, including audio processing, labeling. (github.com)](https://github.com/openvpi/dataset-tools)  
+[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)  
 # 0. 提取干声
 请参照网上教程自主学习  
 我常用的流程是`UVR5 - MDX23C - InstVoc HQ -> 5_HP_Karaoke-UVR ->UVR-De-Echo-Normal`
