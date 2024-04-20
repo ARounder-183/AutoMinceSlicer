@@ -19,7 +19,7 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 # 0. 提取干声
 请参照网上教程自主学习  
 我常用的流程是`UVR5 - MDX23C - InstVoc HQ -> 5_HP_Karaoke-UVR ->UVR-De-Echo-Normal`
-![](60718f2d310b1fe1b5951203c785c395_720.jpg)
+![](./Resources/60718f2d310b1fe1b5951203c785c395_720.jpg)
 # 1. 对音频进行切片
 首先需要将干声变成几秒或者十几秒的切片，使用AudioSlicer进行  
 **参考文档：[data-set tool使用文档](https://openvpi-docs.feishu.cn/wiki/MarkwXLYYiKR3SkJwSMcWALlnJh)**  
@@ -29,11 +29,11 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 ![](Pasted%20image%2020240420095022.png)
 ## 1.2 AudioSlicer的使用
 解压后，双击AudioSlicer.exe打开
-![](Pasted%20image%2020240420095152.png)
+![](Pasted%20image%2020240420095152.png)  
 左上：添加音频文件  
 右侧：设置导出目录  
 右下：开始  
-![](Pasted%20image%2020240420095606.png)
+![](./Resources/Pasted%20image%2020240420095606.png)
 右侧方框参数说明（一般用默认的就行了）：
 `Threshold（dB）`：以 dB 表示的 RMS 阈值。所有 RMS 值都低于此阈值的区域将被视为静音。如果音频有噪音，请增加此值。默认值为 -40。​  
 `Minimum Length（ms）`：每个切片的最小长度，以毫秒为单位。默认值为 5000。​  
