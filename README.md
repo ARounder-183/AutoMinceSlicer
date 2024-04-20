@@ -1,0 +1,2 @@
+# AutoMinceSlicer
+通过歌声的标注文件TextGrid来进行人力音源切片的脚本
