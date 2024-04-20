@@ -19,21 +19,21 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 # 0. 提取干声
 请参照网上教程自主学习  
 我常用的流程是`UVR5 - MDX23C - InstVoc HQ -> 5_HP_Karaoke-UVR ->UVR-De-Echo-Normal`
-![](./Resources/60718f2d310b1fe1b5951203c785c395_720.jpg)
+![](./Resources/60718f2d310b1fe1b5951203c785c395_720.jpg)  
 # 1. 对音频进行切片
 首先需要将干声变成几秒或者十几秒的切片，使用AudioSlicer进行  
 **参考文档：[data-set tool使用文档](https://openvpi-docs.feishu.cn/wiki/MarkwXLYYiKR3SkJwSMcWALlnJh)**  
 请依照参考文档的AudioSlicer进行。
 ## 1.1 data-set tool的下载安装
 从这里下载[Releases · openvpi/dataset-tools (github.com)](https://github.com/openvpi/dataset-tools/releases)  
-![](./Resources/Pasted%20image%2020240420095022.png)
+![](./Resources/Pasted%20image%2020240420095022.png)  
 ## 1.2 AudioSlicer的使用
 解压后，双击AudioSlicer.exe打开
 ![](./Resources/Pasted%20image%2020240420095152.png)  
 左上：添加音频文件  
 右侧：设置导出目录  
 右下：开始  
-![](./Resources/Pasted%20image%2020240420095606.png)
+![](./Resources/Pasted%20image%2020240420095606.png)  
 右侧方框参数说明（一般用默认的就行了）：
 `Threshold（dB）`：以 dB 表示的 RMS 阈值。所有 RMS 值都低于此阈值的区域将被视为静音。如果音频有噪音，请增加此值。默认值为 -40。​  
 `Minimum Length（ms）`：每个切片的最小长度，以毫秒为单位。默认值为 5000。​  
@@ -52,35 +52,35 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 **参考文档：[data-set tool使用文档 - 飞书云文档 (feishu.cn)](https://openvpi-docs.feishu.cn/wiki/MarkwXLYYiKR3SkJwSMcWALlnJh)**  
 请参考文档的Minable进行
 可参考本文的`5. (可选)使用LyricFA基于歌词对切片音频进行自动标注`来减轻手标工作量
-![](./Resources/Pasted%20image%2020240420100818.png)
+![](./Resources/Pasted%20image%2020240420100818.png)  
 点击左上角的`File`->`Open Folder`,选择刚刚通过AudioSlicer切片完的音频存放路径
-![](./Resources/Pasted%20image%2020240420100939.png)
+![](./Resources/Pasted%20image%2020240420100939.png)  
 在日语流程中，请用**罗马音**进行标注。将右侧红框处切换为`romaji`，从左侧选择音频进行标注，在红框栏中输入这段音频对应的罗马音，然后按下`Replace`。  
 如果没有声音请点击耳机形状的按钮切换音频输出设备  
 被标注过的音频名字会如图中一般变灰  
 默认设置下，标注文件会生成在切片音频文件夹内，可以通过`File` -> `Out Directory`修改导出文件夹
-所有音频全部变灰后标注完成
-![](./Resources/Pasted%20image%2020240420101428.png)
+所有音频全部变灰后标注完成  
+![](./Resources/Pasted%20image%2020240420101428.png)  
 
 # 3. 使用SOFA对齐音频并生成textgrid标记
 >SOFA (Singing-Oriented Forced Aligner)是一个专为歌声设计的强制对齐器，同时也兼容非歌声的对齐。相比于MFA更加准确，更易部署。也更适配拼接声库转制​
 >实测在lab准确的情况下SOFA对齐不比精标差多少 
 
-参考文档：[SOFA使用文档 - 飞书云文档 (feishu.cn)](https://openvpi-docs.feishu.cn/wiki/EWkawdcYjii9rlkEu1GcQyaNnAg)  
-参考文档进行安装和使用
+参考文档：[SOFA使用文档 - 飞书云文档 (feishu.cn)](https://openvpi-docs.feishu.cn/wiki/EWkawdcYjii9rlkEu1GcQyaNnAg)    
+参考文档进行安装和使用  
 ## 3.1 Anaconda的下载和安装
 接下来的流程都在Anaconda中进行，如已安装可跳过  
-点击链接下载[Distribution | Anaconda](https://www.anaconda.com/download/)  
+点击链接下载[Distribution | Anaconda](https://www.anaconda.com/download/)   
 如遇到需要登录，可点击下方的Skip registration跳过
-![](./Resources/Pasted%20image%2020240420103036.png)
+![](./Resources/Pasted%20image%2020240420103036.png)  
 选择Windows
-![](./Resources/Pasted%20image%2020240420103120.png)
+![](./Resources/Pasted%20image%2020240420103120.png)  
 选择Just Me
-![](./Resources/Pasted%20image%2020240420103136.png)
+![](./Resources/Pasted%20image%2020240420103136.png)  
 选择安装路径
-![](./Resources/Pasted%20image%2020240420103143.png)
+![](./Resources/Pasted%20image%2020240420103143.png)  
 一定要勾上Add PATH
-![](./Resources/Pasted%20image%2020240420103152.png)
+![](./Resources/Pasted%20image%2020240420103152.png)  
 # 3.2 使用Anaconda创建虚拟环境
 打开Anaconda Powershell Prompt，输入以下命令，创建一个名为SOFA的Python 3.8虚拟环境。（SOFA也可以改成其他的名字，以下皆用SOFA）
 ```python
@@ -91,7 +91,7 @@ conda create -n SOFA python=3.8 -y
 conda activate SOFA
 ```
 访问[PyTorch官网](https://pytorch.org/get-started/locally/)，根据您的操作系统和硬件，按照官方说明复制代码安装PyTorch​  
-![](./Resources/Pasted%20image%2020240420103914.png)
+![](./Resources/Pasted%20image%2020240420103914.png)  
 ## 3.3 下载SOFA库并准备依赖
 项目地址：[qiuqiao/SOFA: SOFA: Singing-Oriented Forced Aligner (github.com)](https://github.com/qiuqiao/SOFA)  
 若不会使用git，可以如图所示下载压缩包然后解压。
