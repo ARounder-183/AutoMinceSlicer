@@ -3,6 +3,7 @@ AutoMinceSlicer是通过歌声的标注文件TextGrid来进行人力音源切片
 对歌声的标注环节基本照搬了[Diffsinger数据预处理和数据集制作](https://openvpi-docs.feishu.cn/wiki/KjXVwPqEoi3aNRkNIazciLgjn6e)的流程  
 整体来说，准确率还是比较高的，切出来的大部分都能用，效果可参考[自动切臊子测试](https://www.bilibili.com/video/BV16t421j7Ps/)  
 **说明**：没有一键包，需要花费精力进行配置，有看不懂的地方可以去看参考文档  
+**解压即用整合包地址：https://pan.baidu.com/s/1RTRLLHLlx15YccaJBD4VTA?pwd=jwzb**  
 ## 文件目录说明
 - LyricFA(LyricFA的修改文件)
 	- JpG2p.py
